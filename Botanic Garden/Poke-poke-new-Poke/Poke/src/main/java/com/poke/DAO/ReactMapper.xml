@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.poke.DAO.ReactDAO">
+	<select id="ReactChoiceView" resultType="React">
+		select * from react
+	</select>
+	<select id="ReactAnswerView" parameterType="int" resultType="React">
+		select * from react where categorize_num = #{categorize_num}
+	</select>
+</mapper>

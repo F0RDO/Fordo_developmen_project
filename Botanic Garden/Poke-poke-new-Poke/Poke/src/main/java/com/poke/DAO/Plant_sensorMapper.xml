@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.poke.DAO.PlantDAO">
+	<insert id="plant_uvInsert" parameterType="Plant">
+	insert into plant_sensor(plant_seq, sensor_uv, plant_sensor_seq ) 
+	values((select plant_seq from garden where plant_nickname = #{plant_nickname}),#{uv},plant_sensor_seq.nextval )
+	</insert>
+	<insert id="plant_temperatureInsert" parameterType="Plant">
+	insert into plant_sensor(plant_seq, sensor_humidity, sensor_temperature,plant_sensor_seq ) 
+	values ((select plant_SEQ from garden where plant_nickname = #{plant_nickname}),#{humidity},#{temperature},plant_sensor_seq.nextval )
+	</insert>
+	<select id="plantTemperatureSelectOne" parameterType="String" resultType="Plant">
+	select plant_seq, sensor_humidity, sensor_temperature
+	from(select * from plant_sensor where plant_seq = (select plant_seq from garden where plant_nickname = #{plant_nickname})and sensor_humidity is not null 
+	order by plant_sensor_seq desc)
+	where rownum = 1
+	</select>
+	
+	<select id="plantUvSelectOne" parameterType="String" resultType = "Plant">
+		select plant_seq, sensor_uv
+	from(select * from plant_sensor where plant_seq = (select plant_seq from garden where plant_nickname = #{plant_nickname})and sensor_uv is not null 
+	order by plant_sensor_seq desc)
+	where rownum = 1
+	</select>
+
+
+
+</mapper>

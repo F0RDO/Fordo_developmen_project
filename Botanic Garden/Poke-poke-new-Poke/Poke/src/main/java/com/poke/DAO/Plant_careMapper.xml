@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.poke.DAO.Plant_careDAO">
+
+	<!-- plant_care 데이터 -->
+	<select id="getAllPlantList" resultType="Plant_care">
+		select plantcare_seq, (select
+		g.plant_nickname
+		from garden g
+		where p.plant_seq = g.plant_seq) as plant_nickname,
+		p.last_date, p.plant_diary, p.plant_height
+		from plant_care p
+		where plant_seq = #{plant_seq}
+	</select>
+
+	<!-- pant_care 날짜에서 cycle 추가 된 값 가져오기 -->
+	<select id="waterNextDay" parameterType="Plant_Garden"
+		resultType="String">
+		select max(last_date+#{cycle}) keep (dense_rank
+		last order by last_date) as last_date
+		from plant_care where plant_seq = #{plant_seq}
+	</select>
+
+	<!-- plant_care 정보 입력하기 -->
+	<insert id="plant_careInsert" parameterType="Plant_care">
+		insert into
+		plant_care
+		values
+		(plantcare_seq.nextval, (select g.plant_seq from garden g
+		where
+		g.plant_nickname = #{plant_nickname})
+		, sysdate, #{plant_diary},
+		#{plant_height})
+	</insert>
+
+	<!-- plant_care 정보 업데이트 하기 -->
+	<update id="plant_careUpdate" parameterType="Plant_care">
+		update plant_care
+		set plant_diary = #{plant_diary} where
+		plantcare_seq = #{plantcare_seq}
+
+	</update>
+
+	<!-- plant_care last_date로 정보 가져오기 -->
+	<select id="plant_careView" parameterType="int" resultType="Plant_care" >
+		select p.plantcare_seq, (select g.plant_nickname
+		from garden g
+		where g.plant_seq = p.plant_seq) as plant_nickname,
+		p.last_date, p.plant_diary, p.plant_height
+		from plant_care p
+		where plantcare_seq= #{plantcare_seq}
+	</select>
+
+	<insert id="plantCareFirstInsert" parameterType="PlantInsert">
+		insert into
+		plant_care
+		values
+		(plantcare_seq.nextval, (select g.plant_seq from
+		garden g where g.plant_nickname = #{plant_nickname})
+		, #{plant_lastdate},
+		null,
+		null)
+		
+	</insert>
+
+
+</mapper>

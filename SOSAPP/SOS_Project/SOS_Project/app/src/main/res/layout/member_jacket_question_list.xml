@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0FFFF">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/brad"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="사용자"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_userInfo"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rad"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_user" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_jacket_count"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/brad"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="구명조끼수"
+        android:textColor="@color/white"
+
+        app:cornerRadius="30sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_quest"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rad"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="#888787"
+        app:layout_constraintStart_toEndOf="@+id/btn_vest"
+        app:layout_constraintTop_toBottomOf="@+id/btn_qeustion_count" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btn_qeustion_count"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/brad"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:text="문의사항수"
+        android:textColor="@color/white"
+        app:cornerRadius="30sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_jacket_count"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_vest"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rad"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="#888787"
+        app:layout_constraintStart_toEndOf="@+id/txt_userInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jacket_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

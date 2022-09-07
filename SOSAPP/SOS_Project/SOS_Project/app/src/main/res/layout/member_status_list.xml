@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A4F0FA">
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/memberstatusdrawable2"
+        android:gravity="center"
+        android:text="구명조끼번호"
+        app:circularflow_radiusInDP="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/connectStatus"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="통신상태적히기"
+        android:textColorLink="#FF0000"
+        android:background="@drawable/memberstatusdrawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/memberstatusdrawable2"
+        android:gravity="center"
+        android:text="배터리상태"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_id" />
+
+    <TextView
+        android:id="@+id/batteryStatus"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="배터리상태적히기"
+        android:textColorLink="#FF0000"
+        android:background="@drawable/memberstatusdrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/currentStatus"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="온도,수압,물감지"
+        android:textColorLink="#FF0000"
+        android:background="@drawable/memberstatusdrawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/memberstatusdrawable2"
+        android:gravity="center"
+        android:text="현재상태"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/memberstatusdrawable2"
+        android:gravity="center"
+        android:text="통신상태"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentStatus" />
+
+    <TextView
+        android:id="@+id/product_id"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:background="@drawable/memberstatusdrawable"
+        android:textColorLink="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tt" />
+
+    <Button
+        android:id="@+id/btn_chart"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="156dp"
+
+        android:text="차트보기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/memberstatusdrawable3"
+        app:layout_constraintTop_toBottomOf="@+id/batteryStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.poke.DAO.CommentDAO">
+	<select id="CommentLoad" parameterType="int" resultType="Comment">
+		select * from comments where post_number = #{post_number}
+	</select>
+	<insert id="CommentWrite" parameterType="Comment">
+		insert into comments values(comment_seq.nextval, #{post_number}, #{comment_contents}, #{id}, sysdate)
+	</insert>
+	<delete id="CommentDelete" parameterType="int">
+		delete from comments where comment_num = #{comment_num}
+	</delete>
+</mapper>

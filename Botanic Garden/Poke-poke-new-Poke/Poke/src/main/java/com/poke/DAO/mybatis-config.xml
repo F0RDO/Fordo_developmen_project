@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--  Mapper.xml파일안에 parameterType, resultType 지정하게 될 때
+	 alias를 줘서 보다 간단하게 코드를 작성할 수 있게 도와주는 방법 -->
+	<typeAliases>
+		<typeAlias type="com.poke.domain.UserInfoVO" alias ="User"/>
+		<typeAlias type="com.poke.domain.CommunityVO" alias = "Community"/>
+		<typeAlias type="com.poke.domain.ReactVO" alias = "React"/>
+		<typeAlias type="com.poke.domain.QuestionVO" alias = "Question"/>
+		<typeAlias type="com.poke.domain.ViewRecommendVO" alias = "ViewRecommend"/>
+		<typeAlias type="com.poke.domain.ChoiceVO" alias = "Choice"/>
+		<typeAlias type="com.poke.domain.RecommendVO" alias = "Recommend"/>
+		<typeAlias type="com.poke.domain.UserChallVO" alias = "UserChall"/>
+		<typeAlias type="com.poke.domain.CommentVO" alias = "Comment"/>
+		
+		<!--  you -->
+		<typeAlias type="com.poke.domain.Plant" alias ="Plant"/>
+		<typeAlias type="com.poke.domain.Garden" alias ="Garden"/>
+		<typeAlias type="com.poke.domain.Plant_care" alias ="Plant_care"/>
+		<typeAlias type="com.poke.domain.Plant_Garden" alias ="Plant_Garden"/>
+		<typeAlias type="com.poke.domain.PlantInsert" alias ="PlantInsert"/>
+		<typeAlias type="com.poke.domain.PlantList" alias ="PlantList"/>
+		
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<!--  DB 연결 설정 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe"/>
+				<property name="username" value="cgi_1_0516_2"/>
+				<property name="password" value="smhrd2"/>
+			</dataSource>
+		</environment>
+	</environments>
+			
+			
+		<!--  Mapper 파일(sql 쿼리문을 가지고 있는 파일) 설정하기  -->
+		<!--  파일이 여러개 생성될 수 있다.  -->
+		<mappers>
+			<mapper resource="com/poke/DAO/UserInfoMapper.xml"/>
+			<mapper resource="com/poke/DAO/CommunityMapper.xml"/>
+			<mapper resource="com/poke/DAO/ReactMapper.xml"/>
+			<mapper resource="com/poke/DAO/QuestionMapper.xml"/>
+			<mapper resource="com/poke/DAO/ChoiceMapper.xml"/>
+			<mapper resource="com/poke/DAO/ViewRecommendMapper.xml"/>
+			<mapper resource="com/poke/DAO/RecommendMapper.xml"/>
+			<mapper resource="com/poke/DAO/UserChallMapper.xml"/>
+			<mapper resource="com/poke/DAO/CommentMapper.xml"/>
+			
+			<!--  you -->
+			<mapper resource="com/poke/DAO/PlantMapper.xml"/>
+			<mapper resource="com/poke/DAO/Plant_careMapper.xml"/>
+			<mapper resource="com/poke/DAO/GardenMapper.xml"/>
+			<mapper resource="com/poke/DAO/Plant_sensorMapper.xml"/>
+		</mappers>		
+		
+
+</configuration>

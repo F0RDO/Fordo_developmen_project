@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.poke.DAO.CommunityDAO">
+	<select id="ViewCommunityAll" resultType="Community">
+		select * from community
+	</select>
+	<select id="ViewCommunityOne" parameterType="int" resultType="Community">
+		select * from community where post_number = #{post_number}
+	</select>
+	<update id="CommunityUpdate" parameterType="Community">
+		update community set post_contents = #{post_contents} where post_number = #{post_number}
+	</update>
+	<delete id="CommunityDelete" parameterType="int">
+		delete from community where post_number = #{post_number}
+	</delete>
+	<insert id="CommunityInsert">
+		insert into community values (post_seq.nextval, #{post_name}, #{post_contents}, 0, #{id})
+	</insert>
+	<update id="CommunityCount" parameterType="int">
+		update community set view_count = view_count+1 where post_number=#{post_number}
+	</update>
+</mapper>

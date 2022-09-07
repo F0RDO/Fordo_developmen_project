@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B903A9F4"
+    android:orientation="vertical"
+
+    tools:context=".RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/txt_id"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="아이디를 입력하세요"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.092"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_pw"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_id"
+        app:layout_constraintStart_toStartOf="@+id/txt_id"
+        app:layout_constraintTop_toBottomOf="@+id/txt_id" />
+
+    <EditText
+        android:id="@+id/txt_nick"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="닉네임을 입력하세요"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pw"
+        app:layout_constraintStart_toStartOf="@+id/txt_pw"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pw" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="375dp"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="#30ffff"
+        android:backgroundTint="#30ffffff"
+        android:color="#FFFCFC"
+        android:entries="@array/my_array"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nick"
+
+        android:spinnerMode="dropdown"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:text="회원가입"
+        android:textColor="#F8F5F5"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

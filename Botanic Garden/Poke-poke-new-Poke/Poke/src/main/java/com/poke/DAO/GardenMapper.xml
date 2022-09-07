@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.poke.DAO.GardenDAO">
+
+	<!--  garden 데이터 전부 가져오기 -->
+	<select id = "gardenSelect" parameterType="String"  resultType="Garden">
+		select * from garden where id = #{id}
+	</select>
+
+	<!--  garden 데이터 한 행 가져오기 -->
+	<select id ="gardenSelectOne" parameterType="int" resultType="Garden">
+		select * from garden where plant_seq = #{plant_seq}
+	</select>
+	
+	
+	<insert id="GardenInsert" parameterType="PlantInsert">
+		insert into garden values(plant_seq.nextval, #{id}, (select plant_number from plant where plant_name = #{plant_name})
+,#{plant_nickname})
+	</insert>
+	
+	<delete id="GardenDelete" parameterType="String">
+		delete from garden where plant_seq = #{plant_seq}
+	</delete>
+	
+	
+	
+
+
+
+
+
+
+
+</mapper>

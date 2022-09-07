@@ -1,0 +1,6 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+Flowering[[:space:]]Heart//teamProject/player/Urban[[:space:]]Zakapa[[:space:]]-[[:space:]]Beautiful[[:space:]]Day.mp3 filter=lfs diff=lfs merge=lfs -text
+*.mp4
+ filter=lfs diff=lfs merge=lfs -text

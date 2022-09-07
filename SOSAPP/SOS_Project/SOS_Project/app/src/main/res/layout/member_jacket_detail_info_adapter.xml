@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberJacketDetailInfoAdapter">
+
+    <TextView
+        android:id="@+id/txt_jacket_battery"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jacket_temperature" />
+
+    <TextView
+        android:id="@+id/txt_jacket_detect"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="74dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="식별번호"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="수압"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="74dp"
+        android:text="물감지"
+        app:layout_constraintStart_toEndOf="@+id/txt_jacket_seq"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:text="수온"
+        app:layout_constraintStart_toEndOf="@+id/txt_jacket_pressure"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="구명조끼 상태"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="연결상태"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:text="배터리잔량"
+        app:layout_constraintStart_toEndOf="@+id/txt_jacket_connect"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/txt_jacket_seq"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/txt_jacket_pressure"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jacket_seq" />
+
+    <TextView
+        android:id="@+id/txt_jacket_connect"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jacket_pressure" />
+
+    <TextView
+        android:id="@+id/txt_jacket_temperature"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jacket_detect" />
+</androidx.constraintlayout.widget.ConstraintLayout>

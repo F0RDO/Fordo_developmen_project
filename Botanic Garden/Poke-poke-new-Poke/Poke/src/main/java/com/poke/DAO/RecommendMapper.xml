@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.poke.DAO.RecommendDAO">
+	<select id="ViewFileLocation" parameterType="int" resultType="Recommend">
+		select * from recommend where recommend_num = #{recommend_num}
+	</select>
+</mapper>
