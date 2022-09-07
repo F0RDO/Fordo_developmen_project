@@ -94,7 +94,7 @@
 <br>
 <br>
 
-## 👨‍👩‍👦‍👦 팀원 역할
+## 👨‍👩‍👦‍👦  역할
 <table>
   <tr>
     <td align="center"><img src="https://item.kakaocdn.net/do/fd49574de6581aa2a91d82ff6adb6c0115b3f4e3c2033bfd702a321ec6eda72c" width="100" height="100"/></td>
