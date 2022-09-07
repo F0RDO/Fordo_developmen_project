@@ -1,1 +1,96 @@
-# Fordo_developmen_project
+# 웹 개발자가 되기 위한 노력[이름 : 김철민]
+![image](https://user-images.githubusercontent.com/104811321/188825572-91aec1ae-1c73-4f4d-9403-59c7f74edd32.png)
+
+## 👀 프로젝트 소개
+1. SOS(Serving Our Savoir)
+ : 해상 조난사고 발생 시 신고 서비스를 제공하여 위험을 알리고 저체온증을 방지하기 위해 열선패드를 제공한다. 본 제품 이용시 웹에 구명조끼를 등록하여 사용을 알리고 신고 기능 작동 시 즉시 웹에 알림하여 발생한 지점 확인과 실시간 카메라를 확인할 수 있게 한다. 연결상태 확인 서비스, 고객센터(1:1질의응답, AS신청)을 통해 유지보수 서비스를 제공한다.
+2. Botanic Garden
+ : 반려식물을 키우는데 어려움을 겪고있는 사람들을 위해 도움을 주는 가느닝 IoT로 식물상태 실시간 알림 서비스, 식물추천 서비스, 식물 문제사항 해결 서비스, 커뮤니티 서비스를 제공한다.
+3. Flowering Heart
+ : 연애시뮬레이션 게임으로 남,여 상황별 선택지를 제공하고 스토리별로 게임을 진행하게된다. 랭킹기능, 게임저장 및 불러오기 기능을 제공한다.
+<br>
+
+## 📅 프로젝트 기간
+1. SOS(Serving Our Savoir)
+2022.08.01 ~ 2022.08.23
+2. Botanic Garden
+2022.06.01 ~ 2022.06.12
+3. Flowering Heart
+2022.04.21 ~ 2022.05.04
+<br>
+<br>
+
+## ⛏ 기술스택
+<table>
+    <tr>
+        <th>구분</th>
+        <th>내용</th>
+    </tr>
+    <tr>
+        <td>사용언어</td>
+        <td>
+            <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
+        </td>
+    </tr>
+    <tr>
+        <td>프레임워크</td>
+        <td>
+            <img src="https://img.shields.io/badge/Spring-7952B3?style=for-the-badge&logo=Spring&logoColor=green"/>
+        </td>
+    </tr>
+    <tr>
+        <td>개발도구</td>
+        <td>
+            <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=Eclipse&logoColor=white"/>
+        </td>
+    </tr>
+    <tr>
+        <td>서버환경</td>
+        <td>
+            <img src="https://img.shields.io/badge/Apache Tomcat-D22128?style=for-the-badge&logo=Apache Tomcat&logoColor=white"/>
+        </td>
+    </tr>
+    <tr>
+        <td>데이터베이스</td>
+        <td>
+            <img src="https://img.shields.io/badge/Oracle 11g-F80000?style=for-the-badge&logo=Oracle&logoColor=white"/>
+        </td>
+    </tr>
+    <tr>
+        <td>협업도구</td>
+        <td>
+            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>
+            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+
+
+## 📌 SW유스케이스
+1. SOS(Serving Our Savior)
+![image](https://user-images.githubusercontent.com/104811321/188815331-87bca201-4d76-4f5d-a5d6-52fa85ac6da8.png)
+
+<br>
+2. Botanic Garden
+![image](https://user-images.githubusercontent.com/104811321/188813518-324f240c-7816-47e8-aec5-d577430594b2.png)
+
+<br>
+3. Flowering Heart
+![image](https://user-images.githubusercontent.com/104811321/188812749-14112658-aa58-4618-a48f-e49de582bafc.png)
+<br>
+<br>
+
+
+## 📌 ER다이어그램
+1. SOS(Serving Our Savior)
+![image](https://user-images.githubusercontent.com/104811321/188813313-c013c5a7-d0e7-4242-a1ed-00b0d997cb4c.png)
+
+<br>
+2. Botanic Garden 
+![image](https://user-images.githubusercontent.com/104811321/187015688-1a9b7f52-f0c3-4208-b1ed-073cbbb05c62.png)
+<br>
+<br>
