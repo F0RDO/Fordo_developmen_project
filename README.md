@@ -36,7 +36,7 @@
     <tr>
         <td>프레임워크</td>
         <td>
-            <img src="https://img.shields.io/badge/Spring-7952B3?style=for-the-badge&logo=Spring&logoColor=green"/>
+            <img src="https://img.shields.io/badge/Spring-008000?style=for-the-badge&logo=Spring&logoColor=green"/>
         </td>
     </tr>
     <tr>
