@@ -77,7 +77,6 @@
 2. Botanic Garden
 ![image](https://user-images.githubusercontent.com/104811321/188813518-324f240c-7816-47e8-aec5-d577430594b2.png)
 
-<br>
 3. Flowering Heart
 ![image](https://user-images.githubusercontent.com/104811321/188812749-14112658-aa58-4618-a48f-e49de582bafc.png)
 <br>
@@ -88,7 +87,6 @@
 1. SOS(Serving Our Savior)
 ![image](https://user-images.githubusercontent.com/104811321/188813313-c013c5a7-d0e7-4242-a1ed-00b0d997cb4c.png)
 
-<br>
 2. Botanic Garden 
 ![image](https://user-images.githubusercontent.com/104811321/187015688-1a9b7f52-f0c3-4208-b1ed-073cbbb05c62.png)
 <br>
